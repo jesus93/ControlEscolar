@@ -89,8 +89,8 @@ namespace WebApplication.Controllers
                         item.IdAlumno != null && item.IdAlumno != 0
                         )
                         {
-                        //var exist = unitOfWork.CatMateriasRepository.GetByID((int)item.IdMateriaCat);
-                        if (item.IdMateria == 0)
+                            //var exist = unitOfWork.CatMateriasRepository.GetByID((int)item.IdMateriaCat);
+                            if (item.IdMateria == 0)
                             {
                                 unitOfWork.MateriasRepository.Insert(item);
                             }
@@ -98,12 +98,12 @@ namespace WebApplication.Controllers
                             {
                                 unitOfWork.MateriasRepository.Update(item);
                             }
+                            unitOfWork.Save();
                         }
 
                     });
                 }
 
-                unitOfWork.Save();
 
                 return Ok(new { responseMsg = $"Se guardaron los cambios correctamente ", HasError = false });
             }
