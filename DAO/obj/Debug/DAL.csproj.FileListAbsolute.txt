@@ -1,0 +1,14 @@
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\DAO.dll.config
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\DAO.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\DAO.pdb
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\Entities.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\EntityFramework.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\Entities.pdb
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\Entities.dll.config
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\EntityFramework.xml
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\obj\Debug\DAO.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\DAO\obj\Debug\DAO.pdb

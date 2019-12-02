@@ -1,0 +1,28 @@
+﻿@model SitioWeb.Models.LoginModel
+
+@{
+    ViewBag.Title = "Control Escolar";
+}
+
+@using (Html.BeginForm("LogIn", "Alumno", FormMethod.Post))
+{
+<div class="row">
+    <div class="col-md-4">
+        @Html.TextBoxFor(model => model.Name)
+    </div>
+    <div class="col-md-4">
+        @Html.TextBoxFor(model => model.ApellidoPaterno)
+    </div>
+    <div class="col-md-4">
+        @Html.TextBoxFor(model => model.ApellidoMaterno)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+
+    </div>
+    <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    </div>
+</div>
+}

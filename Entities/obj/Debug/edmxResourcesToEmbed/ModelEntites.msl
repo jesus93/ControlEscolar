@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GESTION_SHModelStoreContainer" CdmEntityContainer="GESTION_SHEntities">
+    <EntitySetMapping Name="ALUMNOS">
+      <EntityTypeMapping TypeName="GESTION_SHModel.ALUMNOS">
+        <MappingFragment StoreEntitySet="ALUMNOS">
+          <ScalarProperty Name="IdAlumno" ColumnName="IdAlumno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_MATERIAS">
+      <EntityTypeMapping TypeName="GESTION_SHModel.CAT_MATERIAS">
+        <MappingFragment StoreEntitySet="CAT_MATERIAS">
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="IdMateriaCat" ColumnName="IdMateriaCat" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MATERIAS">
+      <EntityTypeMapping TypeName="GESTION_SHModel.MATERIAS">
+        <MappingFragment StoreEntitySet="MATERIAS">
+          <ScalarProperty Name="IdMateria" ColumnName="IdMateria" />
+          <ScalarProperty Name="IdAlumno" ColumnName="IdAlumno" />
+          <ScalarProperty Name="IdMateriaCat" ColumnName="IdMateriaCat" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

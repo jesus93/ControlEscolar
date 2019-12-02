@@ -1,0 +1,50 @@
+﻿@model  SitioWeb.Models.MateriasViewModel
+
+@{
+   
+    ViewBag.Title = "ShowCoursesByStudent";
+    ViewBag.contenidoFinal = Model;
+    int iterator = 0;
+}
+<h2>Materias en curso</h2>
+@using (Html.BeginForm("SaveMaterias", "Alumno", FormMethod.Post))
+{
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre de materia</th>
+                <th scope="col">Costo</th>
+                <th scope="col">Inscrito</th>
+            </tr>
+        </thead>
+        <tbody id="MateriasTable">
+
+            @foreach (var Materias in Model.Materias)
+            {
+            <tr>
+                <th scope="row"> @iterator</th>
+                <th scope="row">@Materias.MateriaNombreCat </th>
+                <th scope="row">@Materias.CostoMateriaCat</th>
+                <th scope="row">@Html.CheckBox($"Materias[{iterator}].Activo",Materias.Activo)</th>
+                @*@Html.Hidden($"Materias[{iterator}].Activo", Materias.Activo)*@
+                @Html.Hidden($"Materias[{iterator}].IdMateriaCat", Materias.IdMateriaCat)
+                @Html.Hidden($"Materias[{iterator}].IdAlumno", Materias.IdAlumno)
+                @Html.Hidden($"Materias[{iterator}].IdMateria", Materias.IdMateria)
+            </tr>
+                iterator++;
+            }
+
+        </tbody>
+    </table>
+
+    <div class="row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-primary">Guardar materias</button>
+            
+        </div>
+    </div>
+}
+

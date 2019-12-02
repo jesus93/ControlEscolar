@@ -1,0 +1,31 @@
+2019-11-30 10:40:27,514 [7] ERROR SitioWeb.Controllers.AlumnoController - System.ArgumentNullException: El valor no puede ser nulo.
+Nombre del parámetro: source
+   en System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   en SitioWeb.Controllers.AlumnoController.ShowCoursesByStudent(Int32 id) en C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\SitioWeb\Controllers\AlumnoController.cs:línea 32
+2019-11-30 10:52:54,955 [7] ERROR SitioWeb.Controllers.AlumnoController - System.ArgumentNullException: El valor no puede ser nulo.
+Nombre del parámetro: source
+   en System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   en SitioWeb.Controllers.AlumnoController.ShowCoursesByStudent(Int32 id) en C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\SitioWeb\Controllers\AlumnoController.cs:línea 33
+2019-11-30 11:09:45,481 [22] ERROR SitioWeb.Controllers.AlumnoController - Newtonsoft.Json.JsonSerializationException: Error converting value "[{"IdMateria":1,"IdAlumno":1,"IdMateriaCat":2,"Activo":true},{"IdMateria":2,"IdAlumno":1,"IdMateriaCat":4,"Activo":true}]" to type 'System.Collections.Generic.IEnumerable`1[Common.Dto.MateriasDto]'. Path '', line 1, position 139. ---> System.ArgumentException: Could not cast or convert from System.String to System.Collections.Generic.IEnumerable`1[Common.Dto.MateriasDto].
+   en Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   en Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en SitioWeb.Controllers.AlumnoController.ShowCoursesByStudent(Int32 id) en C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\SitioWeb\Controllers\AlumnoController.cs:línea 33
+2019-12-01 19:32:04,765 [8] ERROR SitioWeb.Controllers.AlumnoController - Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.IEnumerable`1[Common.Dto.MateriasDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'responseMsg', line 1, position 15.
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en SitioWeb.Controllers.AlumnoController.ShowCoursesByStudent(Int32 id) en C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\SitioWeb\Controllers\AlumnoController.cs:línea 34

@@ -1,0 +1,11 @@
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\bin\Debug\Entities.dll.config
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\bin\Debug\Entities.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\bin\Debug\Entities.pdb
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\bin\Debug\EntityFramework.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\bin\Debug\EntityFramework.xml
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\obj\Debug\Entities.dll
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\obj\Debug\Entities.pdb
+C:\Users\oajes\Downloads\Solución DigiPro\Solucion\WebApplication\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
