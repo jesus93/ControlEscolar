@@ -85,7 +85,7 @@ namespace WebApplication.Controllers
                     materias.ToList().ForEach(item =>
                     {
                         if (item.IdMateriaCat != null && item.IdMateriaCat != 0 &&
-                        item.Activo != null && (bool)item.Activo &&
+                        item.Activo != null &&
                         item.IdAlumno != null && item.IdAlumno != 0
                         )
                         {
