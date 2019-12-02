@@ -27,7 +27,7 @@
                 <th scope="row"> @iterator</th>
                 <th scope="row">@Materias.MateriaNombreCat </th>
                 <th scope="row">@Materias.CostoMateriaCat</th>
-                <th scope="row">@Html.CheckBox($"Materias[{iterator}].Activo",Materias.Activo)</th>
+                <th scope="row">@Html.CheckBox($"Materias[{iterator}].Activo",Materias.Activo, new {@class="customCheck", @costo=  Materias.CostoMateriaCat})</th>
                 @*@Html.Hidden($"Materias[{iterator}].Activo", Materias.Activo)*@
                 @Html.Hidden($"Materias[{iterator}].IdMateriaCat", Materias.IdMateriaCat)
                 @Html.Hidden($"Materias[{iterator}].IdAlumno", Materias.IdAlumno)
@@ -38,6 +38,10 @@
 
         </tbody>
     </table>
+    <div class=" row">
+        <div class=" col-md-8">Costo total</div>
+        <div class=" col-md-4" id="lblCostoTotal"></div>
+    </div>
 
     <div class="row">
         <div class="col-sm-8"></div>
