@@ -90,7 +90,7 @@ namespace WebApplication.Controllers
                         )
                         {
                         //var exist = unitOfWork.CatMateriasRepository.GetByID((int)item.IdMateriaCat);
-                        if (item.IdAlumno == null || item.IdAlumno == 0)
+                        if (item.IdMateria == 0)
                             {
                                 unitOfWork.MateriasRepository.Insert(item);
                             }

@@ -47,6 +47,8 @@ namespace SitioWeb.Controllers
                 IRestResponse<MateriasCatDto> responseCat = client.Execute<MateriasCatDto>(requestCatalog);
                 content = responseCat.Content;
                 var catalogoDes = JsonConvert.DeserializeObject<IEnumerable<MateriasCatDto>>(content);
+                int idStudent = materiasDes.FirstOrDefault(i => i.IdAlumno != 0)?.IdAlumno ?? 0;
+
                 var result = from cat in catalogoDes
                              join mat in materiasDes on cat.IdMateriaCat equals mat.IdMateriaCat into catGrp
                              from item in catGrp.DefaultIfEmpty(new MateriasModel { Activo = false })
@@ -54,7 +56,7 @@ namespace SitioWeb.Controllers
                              {
                                  Activo = item.Activo,
                                  CostoMateriaCat = cat.Costo ?? decimal.Zero,
-                                 IdAlumno = item.IdAlumno,
+                                 IdAlumno = idStudent,
                                  IdMateria = item.IdMateria,
                                  IdMateriaCat = cat.IdMateriaCat,
                                  MateriaNombreCat = cat.Nombre
@@ -104,11 +106,13 @@ namespace SitioWeb.Controllers
 
                 var client = new RestClient($"{path}");
                 var request = new RestRequest($"SaveCourses", Method.POST);
-                request.AddParameter("request", new SaveMateriasDto()
+                
+                request.RequestFormat = DataFormat.Json;
+                
+                request.AddJsonBody(new SaveMateriasDto()
                 {
                     Materias = Materias
                 });
-
                 IRestResponse response = client.Execute(request);
                 var content = response.Content;
 
